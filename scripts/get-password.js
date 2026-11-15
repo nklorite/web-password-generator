@@ -1,15 +1,4 @@
-const passwordButton = document.getElementById('generate-button');
-const passwordInput = document.getElementById('password-input');
-
-passwordButton.addEventListener('click', async () => {
-    const password = await getPassword();
-
-    if (password) {
-        passwordInput.value = password;
-    }
-});
-
-async function getPassword() {
+export async function getPassword() {
     try {
         let response = await fetch('https://api.genratr.com/?length=16&uppercase&lowercase&special&numbers');
 
