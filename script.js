@@ -12,5 +12,3 @@ async function getPassword() {
         console.error(`Error: ${error.message}`);
     }
 }
-
-getPassword();
