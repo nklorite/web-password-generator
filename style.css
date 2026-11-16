@@ -16,18 +16,7 @@ main {
     gap: 10px;
 }
 
-#password-input {
-    width: 300px;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    background-color: #515154;
-    color: #e0e0e0;
-    text-align: center;
-}
-
-#generate-button {
+button {
     padding: 10px 20px;
     font-size: 16px;
     border: none;
@@ -37,7 +26,19 @@ main {
     cursor: pointer;
 }
 
-#generate-button:hover {
+button:hover {
     background-color: #39393d;
     color: #dbd9d9;
+}
+
+#password-input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #515154;
+    color: #e0e0e0;
+    text-align: center;
+    pointer-events: none; 
 }

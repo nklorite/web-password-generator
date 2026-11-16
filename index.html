@@ -12,11 +12,16 @@
     </header>
 
     <main>
-        <input type="text" id="password-input" readonly disabled>
+        <div id="password-container">
+            <input type="text" id="password-input" readonly disabled>
+            <button id="copy-button">Copy</button>
+        </div>
         <button id="generate-button">Generate</button>
     </main>
 
     <script src="scripts/get-password.js" type="module"></script>
     <script src="scripts/password-button.js" type="module"></script>
+
+    <script src="scripts/copy-button.js"></script>
 </body>
 </html>
